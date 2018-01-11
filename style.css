@@ -1,0 +1,118 @@
+@font-face{
+	font-family: 'OSL';
+	src: url('./fonts/OpenSans-Light.ttf');
+}
+
+@font-face{
+	font-family: 'OSR';
+	src: url('./fonts/OpenSans-Regular.ttf');
+}
+
+html{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	font-family: inherit;
+}
+.-absolute-center{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.-header{
+	width:90%;
+	height:80vh;
+}
+
+.-header-text{
+	line-height: 80vh;
+}
+.-header-img{
+	bottom:0px;
+	left: 0px;
+	width: 240px;
+}
+
+.-ln{
+	text-decoration:none;
+}
+.-title{
+	left: 265px;
+	width: 60%;
+	bottom: 24px;
+	font-size: 3em;
+	--padding:10px;
+}
+
+.-title-p1{
+	font-weight:400;
+	padding-bottom:var(--padding);
+}
+.-title-p2{
+	font-weight:100;
+	padding-top:var(--padding);
+}
+.-nav{
+	font-size: 14px;
+}
+.-nav-item{
+	position: relative;
+	cursor: pointer;
+	margin: 0 35px;
+	padding: 15px;
+}
+
+.-nav-item:before{
+	position: absolute;
+	content: "";
+	bottom: 0px;
+	left: 0px;
+	width: 0%;
+	height: 3px;
+	background: var(--accent-color);
+	transition: 0.2s ease all;
+}
+
+.-nav-item.-active:before{
+	width: 100%;
+}
+
+.-nav-brand{
+	position: relative;
+    top: 10px;
+	width: 45px;
+	cursor: pointer;
+	transform: translateY(-300%);
+	transition: 0.4s ease all;
+}
+
+.-social{
+	height: 190px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.-footer{
+	width: 100%;
+    border-top: 1px solid #eee;
+    text-align: center;
+	color: #333;
+}
+.-theme{
+	--plain-text: #fff;
+	--theme-color: #357edd;
+	--accent-color: #1D3963;
+}
+
+.-thm{
+	color: var(--theme-color);
+}
+.-acc{
+	color: var(--accent-color);
+}
