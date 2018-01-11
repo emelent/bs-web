@@ -115,14 +115,14 @@ html{
 	transition: 0.2s ease all;
 }
 .-nav-item.-active:after{
-	left: -35%;
+	left: -33%;
 }
 
 .-nav-item:before{
 	position: absolute;
 	content: "";
 	bottom: 50%;
-    left: 95%;
+    left: 100%;
     width: 0%;
 	height: 2px;
 	background: var(--accent-color);
@@ -130,7 +130,7 @@ html{
 }
 
 .-nav-item.-active:after,.-nav-item.-active:before{
-	width: 40%;
+	width: 34%;
 }
 
 .-nav-brand{
@@ -154,6 +154,7 @@ html{
 	--plain-text: #fff;
 	--theme-color: #357edd;
 	--accent-color: #1D3963;
+	--accent-2-color: #99d5ef;
 }
 
 .-thm{
