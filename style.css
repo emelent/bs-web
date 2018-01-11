@@ -45,9 +45,9 @@ html{
 .-title{
 	left: 265px;
 	width: 60%;
-	bottom: 24px;
+	bottom: 0px;
 	font-size: 3em;
-	--padding:10px;
+	--padding:2px;
 }
 
 .-title-p1{
@@ -64,7 +64,7 @@ html{
 .-nav-item{
 	position: relative;
 	cursor: pointer;
-	margin: 0 35px;
+	margin: 0 15px;
 	padding: 15px;
 }
 
@@ -92,12 +92,6 @@ html{
 	transition: 0.4s ease all;
 }
 
-.-social{
-	height: 190px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
 .-footer{
 	width: 100%;
     border-top: 1px solid #eee;
