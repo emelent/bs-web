@@ -39,6 +39,39 @@ html{
 	width: 240px;
 }
 
+
+/*phones*/
+@media (max-width:767px) {
+	.-hide-xs{
+		display: none!important;
+	}
+}
+
+/*tablet*/
+@media (min-width:768px) and (max-width:991px) {
+	.-hide-sm{
+		display: none!important;
+	}
+
+}
+
+/*monitor*/
+@media (min-width:992px) and (max-width:1199px) {
+
+	.-hide-md{
+		display: none!important;
+	}
+}
+
+/*large monitor*/
+@media (min-width:1200px) {
+	.-hide-lg{
+		display: none!important;
+	}
+
+}
+
+
 .-ln{
 	text-decoration:none;
 }
@@ -59,28 +92,45 @@ html{
 	padding-top:var(--padding);
 }
 .-nav{
+	background: #fff;
 	font-size: 14px;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 .-nav-item{
 	position: relative;
 	cursor: pointer;
-	margin: 0 15px;
+	margin: 0 10px;
 	padding: 15px;
+}
+
+.-nav-item:after{
+	position: absolute;
+	content: "";
+	bottom: 50%;
+    left: 0%;
+    width: 0%;
+	height: 2px;
+	background: var(--accent-color);
+	transition: 0.2s ease all;
+}
+.-nav-item.-active:after{
+	left: -35%;
 }
 
 .-nav-item:before{
 	position: absolute;
 	content: "";
-	bottom: 0px;
-	left: 0px;
-	width: 0%;
-	height: 3px;
+	bottom: 50%;
+    left: 95%;
+    width: 0%;
+	height: 2px;
 	background: var(--accent-color);
 	transition: 0.2s ease all;
 }
 
-.-nav-item.-active:before{
-	width: 100%;
+.-nav-item.-active:after,.-nav-item.-active:before{
+	width: 40%;
 }
 
 .-nav-brand{
@@ -94,9 +144,11 @@ html{
 
 .-footer{
 	width: 100%;
-    border-top: 1px solid #eee;
     text-align: center;
+
 	color: #333;
+	font-size: 12px;
+    border-top: 1px solid #eee;
 }
 .-theme{
 	--plain-text: #fff;
