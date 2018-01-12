@@ -26,8 +26,10 @@ function navClick(){
 	// if home
 	if(id === '0'){
 		navBrand.classList.remove('-active')
+		//navBrand.src = './images/bs.svg'
 	}else{
 		navBrand.classList.add('-active')
+		//navBrand.src = './images/bs-2.svg'
 	}
 	
 }

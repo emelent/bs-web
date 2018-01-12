@@ -1,4 +1,4 @@
-@font-face{
+2font-face{
 	font-family: 'OSL';
 	src: url('./fonts/OpenSans-Light.ttf');
 }
@@ -37,7 +37,7 @@ html{
 	width:90%;
 	height:80vh;
 
-	transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) all;
+	transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) all;
     transform: translateY(10%);
     opacity: 0;
 }
@@ -49,9 +49,9 @@ html{
 
 .-header-text{
 	opacity: 0;
-	transform: translateY(-2%);
+	transform: translateY(2%);
 	line-height: 80vh;
-	transition: 0.3s ease all;
+	transition: 0.2s ease all;
 	transition-delay: 0.3s;
 }
 .-view.-active .-header-text{
@@ -169,12 +169,13 @@ html{
     top: 10px;
 	width: 45px;
 	cursor: pointer;
-    transform: translateY(-30%);
-	transition: var(--cubic-all); 
-	transition-delay: 0.3s;
+    /*transform: translateY(-30%);*/
+	/*transition: var(--cubic-all); */
+	/*transition-delay: 0.2s;*/
 }
 
 .-nav-brand.-active{
+	display: initial;
 	opacity: 1;
 	transform: translateY(0%);
 }
@@ -192,7 +193,7 @@ html{
 	--theme-color: #357edd;
 	--accent-color: #1D3963;
 	--accent-2-color: #99d5ef;
-	--cubic-all: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1) all;
+	--cubic-all: 0.2s cubic-bezier(0.22, 0.61, 0.36, 1) all;
 }
 
 .-thm{
