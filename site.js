@@ -1,14 +1,38 @@
 const f = q => document.querySelector(q)
 const a = q => document.querySelectorAll(q)
+const attach = (q, e, f) => 
+	a(q).forEach(el => el.addEventListener(e, f))
+
+const activate = (q, id) => {
+	a(q).forEach(el => el.classList.remove('-active'))
+	f(q + '[data-id="'+ id + '"]').classList.add('-active')
+}
+
+const navBrand = f('.-nav-brand')
 
 function activateNavLink(id){
-	a('.-nav-btn').forEach(el => el.classList.remove('-active'))
-	f('.-nav-btn[data-id="' + id + '"]').classList.add('-active')
-}
-function navClick(){
-	activateNavLink(this.dataset.id)
+	activate('.-nav-btn', id)
 }
 
-a('.-nav-btn').forEach(el => el.addEventListener('click', navClick))
+function activateView(id){
+	activate('.-view', id)
+}
+
+function navClick(){
+	const id = this.dataset.id
+	activateNavLink(id)
+	activateView(id)
+
+	// if home
+	if(id === '0'){
+		navBrand.classList.remove('-active')
+	}else{
+		navBrand.classList.add('-active')
+	}
+	
+}
+
+attach('.-nav-btn', 'click', navClick)
+
 
 

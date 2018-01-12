@@ -14,40 +14,56 @@
 </style>
 </head>
 <body class="-theme">
-	<nav class="-nav -hide-xs fixed top-0 ttu -dark-blue w-100 tc z-1">
-		<img id="nav-home" class="-nav-brand" src="./images/bs.svg" alt="Boolean Sandwich Brand">
-		<span id="nav-about" class="-nav-item -nav-btn" data-id="1">About</span>
-		<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
-		<span id="nav-team" class="-nav-item -nav-btn" data-id="2">Team</span>
-		<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
-		<span id="nav-work" class="-nav-item -nav-btn" data-id="3">Work</span>
-		<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
-		<span id="nav-contact" class="-nav-item -nav-btn" data-id="4">Contact</span>
-	</nav>
-	<div class="-header fixed -absolute-center z-0 -hide-xs">
-		<div class="-header-text fixed -absolute-center h-100 fw1 tc f2">
-			Simple Elegance.
-		</div>
-		<img class="-header-img absolute" 
-			src="./images/bs-2.svg" alt="Boolean Sandwiches Logo">
-		<div class="-title absolute f1 ttu">
-			<div class="-title-p1  -acc">Boolean</div>
-			<div class="-title-p2 -thm">Sandwiches</div>
-			<div>
-				<a class="-ln mh3 -acc" href="">
-					<span class="mdi mdi-twitter mdi-36px"></span>
-				</a>
-				<a class="-ln mh3 -acc" href="">
-					<span class="mdi mdi-instagram mdi-36px"></span>
-				</a>
-				<a class="-ln mh3 -acc" href="">
-					<span class="mdi mdi-map-marker mdi-36px"></span>
-				</a>
+	<!-- Non-mobile, weird right? Keep scrolling... -->
+	<div class="-hide-xs">
+		<nav class="-nav fixed top-0 ttu -dark-blue w-100 tc z-1">
+			<img id="nav-home" data-id="0" class="-nav-brand -nav-btn" src="./images/bs.svg" alt="Boolean Sandwich Brand">
+			<span id="nav-about" class="-nav-item -nav-btn" data-id="1">About</span>
+			<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
+			<span id="nav-team" class="-nav-item -nav-btn" data-id="2">Team</span>
+			<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
+			<span id="nav-work" class="-nav-item -nav-btn" data-id="3">Work</span>
+			<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
+			<span id="nav-contact" class="-nav-item -nav-btn" data-id="4">Contact</span>
+		</nav>
+		<div id="home-view" class="-view -active" data-id="0">
+			<div class="-header-text fixed -absolute-center h-100 fw1 tc f2">
+				Simple Elegance.
+			</div>
+			<img class="-header-img absolute" 
+				src="./images/bs-2.svg" alt="Boolean Sandwiches Logo">
+			<div class="-title absolute f1 ttu">
+				<div class="-title-p1  -acc">Boolean</div>
+				<div class="-title-p2 -thm">Sandwiches</div>
+				<div>
+					<a class="-ln mh3 -acc" href="">
+						<span class="mdi mdi-twitter mdi-36px"></span>
+					</a>
+					<a class="-ln mh3 -acc" href="">
+						<span class="mdi mdi-instagram mdi-36px"></span>
+					</a>
+					<a class="-ln mh3 -acc" href="">
+						<span class="mdi mdi-map-marker mdi-36px"></span>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="-footer fixed bottom-0 left-0 pa2 -hide-xs">
-		<span class="">&copy; Boolean Sandwiches 2018. All rights reserved.</span>
+		<div id="about-view" class="-view" data-id="1">
+			<div class="f2 mt5">It's about somebody</div>
+			<div class="-article-box"></div>
+		</div>
+		<div id="team-view" class="-view" data-id="2">
+			<div class="f2 mt5">My boys</div>
+		</div>
+		<div id="work-view" class="-view" data-id="3">
+			<div class="f2 mt5">We workin'</div>
+		</div>
+		<div id="contact-view" class="-view" data-id="4">
+			<div class="f2 mt5">Get connected</div>
+		</div>
+		<div class="-footer fixed bottom-0 left-0 pa2">
+			<span class="">&copy; Boolean Sandwiches 2018. All rights reserved.</span>
+		</div>
 	</div>
 <script src="./site.js"></script>
 </body>
