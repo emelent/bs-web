@@ -22,12 +22,13 @@
 			<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
 			<span id="nav-team" class="-nav-item -nav-btn" data-id="2">Team</span>
 			<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
-			<span id="nav-work" class="-nav-item -nav-btn" data-id="3">Work</span>
+			<span id="nav-work" class="-nav-item strike" data-id="3">Work</span>
 			<span id="" class="-nav-item"><span class="mdi mdi-details"></span></span>
 			<span id="nav-contact" class="-nav-item -nav-btn" data-id="4">Contact</span>
 		</nav>
 		<div id="home-view" class="-view -active" data-id="0">
-			<div class="-header-text fixed -absolute-center h-100 fw1 tc f2">
+			<!--<div class="-bg-strip"></div>-->
+			<div class="-header-text -fade-in tracked fixed -absolute-center h-100 fw1 tc f2">
 				Simple Elegance.
 			</div>
 			<img class="-header-img absolute" 
@@ -42,29 +43,136 @@
 					<a class="-ln mh3 -acc" href="">
 						<span class="mdi mdi-instagram mdi-36px"></span>
 					</a>
-					<a class="-ln mh3 -acc" href="">
-						<span class="mdi mdi-map-marker mdi-36px"></span>
-					</a>
+
 				</div>
 			</div>
 		</div>
 		<div id="about-view" class="-view" data-id="1">
-			<div class="f2 mt5">It's about somebody</div>
-			<div class="-article-box"></div>
+			<div class="f1 -thm tracked mt1 pt5 pb5"><b class="-acc">Boolean</b> Sandwiches</div>
+			<article class="-fade-in">
+				<div class="-article-title">A little something about us</div>
+				<p class="-article">
+					No, we don't make sandwiches ... maybe not unless you ask 
+					nicely, and that's exactly what we are.
+				</p><br/>	
+				<p class="-article">
+					<b class="-acc">Boolean Sandwiches</b>
+					is a tech company with it's eye currently on web development.
+					<br/><br/>
+					Our minimalistic approach allows us to focus on what needs to
+					be done, trimming unnecessary bloat to produce stunning,
+					responsive websites that perform well and look good on any device.
+				</p><br/>
+				<p class="-article">
+					We can be a little weird sometimes, which is what makes us so great at
+					what we do.	
+					Oh, and feel free to call us 
+					<b class="-acc">Bit Sammies</b>,
+					we know we do.
+				</p><br/>
+			</article>
+			<article class="-fade-in">
+				<div class="-article-title">Things that get us excited</div>
+				<p class="-article">
+				You made it this far? Looks like <i>someone</i> really like us. :)
+				</p><br/>
+				<div class="tl pl3">
+					<a href="https://facebook.github.io/react-native/"><img class="-about-img" src="./images/react.svg" alt=""></a>
+					<a href="https://en.wikipedia.org/wiki/Regular_Show"><img class="-about-img" src="./images/mordecai-and-rigby-pointing.jpg" alt=""></a>
+					<a href="https://golang.org/"><img class="-about-img" src="./images/go.svg" alt=""></a>
+					<a href="https://en.wikipedia.org/wiki/Gaming"><img class="-about-img" src="./images/controller.jpg" alt=""></a>
+					<a href="http://whoismrrobot.com/"><img class="-about-img" src="./images/mr-robot.jpg" alt=""></a>
+					<a href="https://en.wikipedia.org/wiki/Linux"><img class="-about-img" src="./images/linux.svg" alt=""></a>
+					<a href="https://en.wikipedia.org/wiki/Virtual_reality"><img class="-about-img" src="./images/vr.jpg" alt=""></a>
+					<a href="https://en.wikipedia.org/wiki/Skateboarding"><img class="-about-img" src="./images/skate.jpg" alt=""></a>
+					<a href="https://en.wikipedia.org/wiki/Dragon_Ball_Z"><img class="-about-img" src="./images/goku.jpg" alt=""></a>
+				</div>
+			</article>
 		</div>
-		<div id="team-view" class="-view" data-id="2">
-			<div class="f2 mt5">My boys</div>
+		<div id="team-view" class="-view tc" data-id="2">
+			<div class="f1 tc tracked mt1 pt5 pb5">The heart and soul</div>
+			<div class="f3 tc pb4 -fade-in">
+				<span class="-thm f2"><b class="-acc">Boolean</b> Sandwiches</span>
+				currently consists of 2 core employees.<br/><br/>
+				Reward them with your affection by clicking the
+				<span class="mdi mdi-heart"></span>.
+			</div>
+			<div class="-team-container">
+				<div class="-team-col -fade-in">
+					<div class="-avatar">
+						<img class="-team-img" src="./images/serg.jpg" alt="">
+						<div class="-team-title">
+							Employee A
+							<a class="black -hover-thm" href=""><span class="mdi mdi-24px mdi-twitter"></span></a>
+							<a class="black -hover-thm" href=""><span class="mdi mdi-24px mdi-instagram"></span></a>
+							<span class="pointer black -hover-heart"><span class="mdi mdi-24px mdi-heart"></span></span>
+						</div>
+					</div>
+					<div class="-bio">
+						<p>
+							Employee A, commonly known as "Lesego Motea".
+							Works in Marketing, Web Design, Web Development.
+						</p>
+					</div>
+				</div>
+				<div class="-team-col -fade-in">
+					<div class="-avatar">
+						<img class="-team-img" style="filter: grayscale(54%);" src="./images/roy.jpg" alt="">
+						<div class="-team-title">
+							Employee B
+							<a class="black -hover-thm" href=""><span class="mdi mdi-24px mdi-twitter"></span></a>
+							<a class="black -hover-thm" href=""><span class="mdi mdi-24px mdi-instagram"></span></a>
+							<span class="pointer black -hover-heart"><span class="mdi mdi-24px mdi-heart"></span></span>
+						</div>
+					</div>
+					<div class="-bio">
+						<p>
+							Employee B, commonly known as "Roy Motloutsi".
+							Works in Software, Web Design, Web Development.
+						</p>
+					</div>
+				</div>
+			</div><br/>
 		</div>
 		<div id="work-view" class="-view" data-id="3">
 			<div class="f2 mt5">We workin'</div>
 		</div>
-		<div id="contact-view" class="-view" data-id="4">
-			<div class="f2 mt5">Get connected</div>
+		<div id="contact-view" class="-view tc" data-id="4">
+			<div class="f1 tc tracked mt1 pt5 pb5">Talk to us</div>
+			<div class="f3 tc -fade-in pb3">We're actually real people, and we're pretty cool(the coolest).</div>
+			<div class="-fade-in">
+				<div class="pa4 f2">
+					<span class="mdi mdi-phone"></span>
+					012 345 6789
+				</div>
+				<div class="pa4 f2">
+					<span class="mdi mdi-email"></span>
+					info@booleansandwiches.com
+				</div>
+				<div class="pa4 f2">
+					<a href="" class="black no-underline -hover-thm">
+						<span class="mdi mdi-map-marker"></span>
+						13 Lumo Street<br/>
+						Fig Town</br>
+						1999
+					</a>
+				</div><br/>
+
+				<a class="black -hover-thm no-underline mr2" href="">
+					<span class="mdi mdi-twitter mdi-36px"></span>
+				</a>
+				<a class="black -hover-thm no-underline" href="">
+					<span class="mdi mdi-instagram mdi-36px"></span>
+				</a>
+			</div>
 		</div>
 		<div class="-footer fixed bottom-0 left-0 pa2">
 			<span class="">&copy; Boolean Sandwiches 2018. All rights reserved.</span>
 		</div>
 	</div>
 <script src="./site.js"></script>
+<script>
+	f('#nav-contact').click()
+</script>
 </body>
 </html>

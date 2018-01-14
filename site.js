@@ -16,6 +16,7 @@ function activateNavLink(id){
 
 function activateView(id){
 	activate('.-view', id)
+	scrollTo(0,0)
 }
 
 function navClick(){
