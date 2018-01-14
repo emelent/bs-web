@@ -8,7 +8,7 @@ const activate = (q, id) => {
 	f(q + '[data-id="'+ id + '"]').classList.add('-active')
 }
 
-const navBrand = f('.-nav-brand')
+
 
 function activateNavLink(id){
 	activate('.-nav-btn', id)
@@ -19,26 +19,46 @@ function activateView(id){
 	scrollTo(0,0)
 }
 
+function activateMobView(id){
+	activate('.-mob-view', id)
+	scrollTo(0,0)
+}
+
 function navClick(){
 	const id = this.dataset.id
+	const navBrand = f('.-nav-brand')
 	activateNavLink(id)
 	activateView(id)
 
 	// if home
 	if(id === '0'){
 		navBrand.classList.remove('-active')
-		//navBrand.src = './images/bs.svg'
 	}else{
 		navBrand.classList.add('-active')
-		//navBrand.src = './images/bs-2.svg'
 	}
-	
+}
+
+function mobNavClick(){
+	const id = this.dataset.id
+	activateMobView(id)
+	f('.-stacks').click()
+}
+
+function heartClick(event){
+	const el =  event.target.parentElement
+	el.classList.toggle('-active')
+	const name = el.dataset.id
+	console.log(`Your affection goes out to ${name}`);
+}
+
+function stackClick(){
+	a('.-stack').forEach(el => el.classList.toggle('-active'))
+	f('.-mob-menu').classList.toggle('dn')
 }
 
 attach('.-nav-btn', 'click', navClick)
-attach('.-heart', 'click', event => {
-	const el =  event.target.parentElement
-	el.classList.toggle('-active')
-})
+attach('.-mob-nav', 'click', mobNavClick)
+attach('.-heart', 'click', heartClick)
+attach('.-stacks', 'click', stackClick)
 
 

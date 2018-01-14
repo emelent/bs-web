@@ -1,4 +1,4 @@
-/* @font-face{
+@font-face{
 	font-family: 'OSL';
 	src: url('./fonts/OpenSans-Light.ttf');
 }
@@ -11,10 +11,9 @@
 @font-face{
 	font-family: 'OSB';
 	src: url('./fonts/OpenSans-Bold.ttf');
-} */
+}
 
 html{
-	font-family: sans-serif;
 	font-family: monospace;
 	box-sizing: border-box;
 }
@@ -42,7 +41,7 @@ html{
 	z-index: 0;
 
 	width:90%;
-	height:0vh;
+	height:80vh;
 
 	transition: 
 		0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) opacity,
@@ -50,6 +49,7 @@ html{
     transform: translateY(10%);
     opacity: 0;
 	pointer-events: none;
+	overflow: hidden;
 }
 
 .-view.-active{
@@ -57,7 +57,7 @@ html{
 	transform: translateY(0%);
     opacity: 1;
 	pointer-events: initial;
-	height:80vh;
+	overflow:initial;
 }
 
 .-header-text{
@@ -305,6 +305,7 @@ html{
 }
 
 .-mob-view{
+	display: none;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -312,6 +313,61 @@ html{
 	bottom: 0;
 	margin: auto;	
 }
+
+.-mob-view.-active{
+	display: initial;
+}
+
+.-stacks{
+	position: fixed;
+	height: 50px;
+	width:60px;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0 15px;
+	/* border: 1px solid #000; */
+	border-bottom: none;
+	/* background: var(--accent-color); */
+	/* background: var(--theme-color); */
+}
+
+.-stack{
+	background:#000;
+	height:2px;
+	width: 100%;
+	margin: 10px 0px;
+
+	/* transition: var(--cubic-all); */
+}
+.-stack:first-child{
+	margin-top: 20px;
+}
+
+.-stack.-active{
+	transform: rotate(45deg) translateY(-9px) translateX(-8px);
+}
+.-stack.-active:first-child{
+	transform: rotate(-45deg);
+}
+
+.-mob-social{
+	position: fixed;
+	bottom:100px;
+	width: 100%;
+	text-align: center;
+}
+
+.-mob-nav{
+	margin: 10px 0;
+}
+
+.-mob-nav.-active{
+	color: var(--theme-color);
+}
+
+
 /*phones*/
 @media (max-width:767px) {
 	.-hide-xs{
