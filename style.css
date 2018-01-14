@@ -209,11 +209,16 @@ html{
 	font-size: 32px;
 	/*font-family: OSB;*/
 	padding: 20px 0;
+	line-height: 1.04;
+	letter-spacing: -0.05em;
+	letter-spacing: -.004em;
+	color: rgba(0,0,0,.84);
 }
 
 .-article{
 	font-size: 18px;
 	/*font-family: OSL;*/
+	color: rgba(0,0,0,.84);
 }
 
 .-team-container{
@@ -310,8 +315,10 @@ html{
 	left: 0;
 	right: 0;
 	top: 0;
-	bottom: 0;
-	margin: auto;	
+	bottom: 40px;
+	overflow: scroll;
+	margin: auto;
+	text-align: center;	
 }
 
 .-mob-view.-active{
@@ -320,7 +327,7 @@ html{
 
 .-stacks{
 	position: fixed;
-	height: 50px;
+	height: 30px;
 	width:60px;
 	bottom: 20px;
 	left: 0;
@@ -367,9 +374,37 @@ html{
 	color: var(--theme-color);
 }
 
+.-mob-title{
+	font-family: OSB;
+	font-size: 28px;
+	line-height: 1.04;
+	letter-spacing: -0.05em;
+	color: rgba(0,0,0,.84);
+}
+
+.-mob-view-title{
+	font-family: OSB;
+	line-height: 1.04;	
+	letter-spacing: -0.05em;
+}
+.-mob-text{
+	font-family: OSL;
+	font-size:18px;
+	/* line-height: 1.04; */
+	letter-spacing: -.004em;
+
+	color: rgba(0,0,0,.84);
+}
 
 /*phones*/
 @media (max-width:767px) {
+	html{
+		font-family: OSL;
+	}
+	.-about-img{
+		width: 40%;
+		height: 110px;
+	}
 	.-hide-xs{
 		display: none!important;
 	}

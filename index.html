@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div id="about-view" class="-view" data-id="1">
-			<div class="f1 -thm tracked mt1 pt5 pb5"><b class="-acc">Boolean</b> Sandwiches</div>
+			<div class="f1 -thm tracked mt1 pt4 pb5"><b class="-acc">Boolean</b> Sandwiches</div>
 			<article class="-fade-in">
 				<div class="-article-title">A little something about us</div>
 				<p class="-article">
@@ -61,7 +61,7 @@
 				<p class="-article">
 					<b class="-acc">Boolean Sandwiches</b>
 					is a tech company with it's eye currently on web development.
-					<br/><br/>
+					<br/><br/><br/>
 					Our minimalistic approach allows us to focus on what needs to
 					be done, trimming unnecessary bloat to produce stunning,
 					responsive websites that perform well and look good on any device.
@@ -93,12 +93,12 @@
 			</article>
 		</div>
 		<div id="team-view" class="-view tc" data-id="2">
-			<div class="f1 tc tracked mt1 pt5 pb5">The heart and soul</div>
+			<div class="f1 tc tracked mt1 pt4 pb5">The heart and soul</div>
 			<div class="f3 tc pb4 -fade-in">
 				<span class="-thm f2"><b class="-acc">Boolean</b> Sandwiches</span>
 				currently consists of 2 core employees.<br/><br/>
 				Reward them with your affection by clicking the
-				<span class="mdi mdi-heart"></span>.
+				<span class="mdi mdi-heart -hover-heart pointer"></span>.
 			</div>
 			<div class="-team-container">
 				<div class="-team-col -fade-in">
@@ -143,7 +143,7 @@
 			<div class="f2 mt5">We workin'</div>
 		</div>
 		<div id="contact-view" class="-view tc" data-id="4">
-			<div class="f1 tc tracked mt1 pt5 pb5">Talk to us</div>
+			<div class="f1 tc tracked mt1 pt4 pb5">Talk to us</div>
 			<div class="f3 tc -fade-in pb3">We're actually real people, and we're pretty cool(the coolest).</div>
 			<div class="-fade-in">
 				<div class="pa4 f2">
@@ -177,8 +177,9 @@
 	</div>
 	<!-- Mini like phone, version... yea, phone version -->
 	<div class="-show-xs">
+		<!-- Views -->
 		<div id="mob-home" data-id="0" class="-mob-view -active">
-			<div class="f1 tc ttu -thm pt4">
+			<div class="f2 tc ttu -thm pt4">
 				<b class="-acc">Boolean</b><br/>
 				Sandwiches
 			</div>
@@ -197,14 +198,54 @@
 			</div>
 		</div>
 
+		<div id="mob-view" data-id="1" class="-mob-view ph3">
+				<div class="f4 tc ttu -thm tracked pv2 bg-white fixed top-0 left-0 w-100"><b class="-acc">Boolean</b> Sandwiches</div>
+				<article class="tl mt5">
+					<div class="-mob-title">Something about us</div>
+					<p class="-mob-text lh-copy"> 
+						No, we don't make sandwiches ... maybe not unless you ask 
+						nicely, and that's exactly what we are.
+						<br/><br/>
+						<b class="-acc">Boolean Sandwiches</b>
+						is a tech company with it's eye currently on web development.
+						<br/><br/>
+						
+						Our minimalistic approach allows us to focus on what needs to
+						be done, trimming unnecessary bloat to produce stunning,
+						responsive websites that perform well and look good on any device.
+						<br/><br/>
+
+						We can be a little weird sometimes, which is what makes us so great at
+						what we do.	
+						Oh, and feel free to call us 
+						<b class="-acc">Bit Sammies</b>, we know we do.
+					</p><br/>
+					<div class="-mob-title">Things that get us excited</div>
+					<p class="-mob-text lh-copy">
+						You made it this far? Looks like <i>someone</i> really like us. :)
+					</p><br/>
+					<div class="">
+						<a href="https://facebook.github.io/react-native/"><img class="-about-img" src="./images/react.svg" alt=""></a>
+						<a href="https://en.wikipedia.org/wiki/Regular_Show"><img class="-about-img" src="./images/mordecai-and-rigby-pointing.jpg" alt=""></a>
+						<a href="https://golang.org/"><img class="-about-img" src="./images/go.svg" alt=""></a>
+						<a href="https://en.wikipedia.org/wiki/Gaming"><img class="-about-img" src="./images/controller.jpg" alt=""></a>
+						<a href="http://whoismrrobot.com/"><img class="-about-img" src="./images/mr-robot.jpg" alt=""></a>
+						<a href="https://en.wikipedia.org/wiki/Linux"><img class="-about-img" src="./images/linux.svg" alt=""></a>
+						<a href="https://en.wikipedia.org/wiki/Virtual_reality"><img class="-about-img" src="./images/vr.jpg" alt=""></a>
+						<a href="https://en.wikipedia.org/wiki/Skateboarding"><img class="-about-img" src="./images/skate.jpg" alt=""></a>
+						<a href="https://en.wikipedia.org/wiki/Dragon_Ball_Z"><img class="-about-img" src="./images/goku.jpg" alt=""></a>
+					</div>
+				</article>
+		</div>
+
 		<!-- Mobile menu -->
 		<div class="fixed pt4 absolute--fill -mob-menu tc bg-white dn">
 			<div class="-menu-opts pt3">
-				<div data-id="0" class="f2 -hover-thm -mob-nav -active">Home</div>
-				<div data-id="1" class="f2 -hover-thm -mob-nav">About</div>
-				<div data-id="2" class="f2 -hover-thm -mob-nav">Team</div>
-				<div data-id="3" class="f2 -hover-thm -mob-nav">Work</div>
-				<div data-id="4" class="f2 -hover-thm -mob-nav">Contact</div>
+				<div id="mob-nav-home" data-id="0" class="f2 -hover-thm -mob-nav -active">Home</div>
+				<div id="mob-nav-about" data-id="1" class="f2 -hover-thm -mob-nav">About</div>
+				<div id="mob-nav-team" data-id="2" class="f2 -hover-thm -mob-nav">Team</div>
+				<div id="mob-nav-work" data-id="3" class="f2 -hover-thm -mob-nav">Work</div>
+				<div id="mob-nav-contact" data-id="4" class="f2 -hover-thm -mob-nav">Contact</div>
 			</div>
 			<div class="-mob-social">
 					<a class="-ln mh3 -acc" href="">
@@ -227,7 +268,7 @@
 	</div>
 <script src="./site.js"></script>
 <script>
-
+	f('#mob-nav-about').click()
 </script>
 </body>
 </html>

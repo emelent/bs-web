@@ -13,6 +13,9 @@ const activate = (q, id) => {
 function activateNavLink(id){
 	activate('.-nav-btn', id)
 }
+function activateMobNavLink(id){
+	activate('.-mob-nav', id)
+}
 
 function activateView(id){
 	activate('.-view', id)
@@ -41,7 +44,9 @@ function navClick(){
 function mobNavClick(){
 	const id = this.dataset.id
 	activateMobView(id)
-	f('.-stacks').click()
+	activateMobNavLink(id)
+	f('.-mob-menu').classList.add('dn')
+	a('.-stack').forEach(el => el.classList.remove('-active'))
 }
 
 function heartClick(event){
