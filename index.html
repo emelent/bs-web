@@ -93,7 +93,7 @@
 			</article>
 		</div>
 		<div id="team-view" class="-view tc" data-id="2">
-			<div class="f1 tc tracked mt1 pt4 pb5">The heart and soul</div>
+			<div class="f1 tc tracked mt1 pt4 pb5">The Heart and Soul</div>
 			<div class="f3 tc pb4 -fade-in">
 				<span class="-thm f2"><b class="-acc">Boolean</b> Sandwiches</span>
 				currently consists of 2 core employees.<br/><br/>
@@ -137,7 +137,7 @@
 						</p>
 					</div>
 				</div>
-			</div><br/>
+			</div>
 		</div>
 		<div id="work-view" class="-view" data-id="3">
 			<div class="f2 mt5">We workin'</div>
@@ -198,7 +198,7 @@
 			</div>
 		</div>
 
-		<div id="mob-view" data-id="1" class="-mob-view ph3">
+		<div id="mob-about" data-id="1" class="-mob-view ph3">
 				<div class="f4 tc ttu -thm tracked pv2 bg-white fixed top-0 left-0 w-100"><b class="-acc">Boolean</b> Sandwiches</div>
 				<article class="tl mt5">
 					<div class="-mob-title">Something about us</div>
@@ -237,9 +237,58 @@
 					</div>
 				</article>
 		</div>
-
+		<div id="mob-team" data-id="2" class="-mob-view ph3">
+				<div class="f4 tc ttu -thm tracked pv2 bg-white fixed top-0 left-0 w-100"><b class="-acc">Boolean</b> Sandwiches</div>
+				<article class="tl mt5">
+					<div class="-mob-title">The Heart and Soul</div>
+					<p class="-mob-text lh-copy"> 
+						<b class="-acc">Boolean Sandwiches</b>
+						currently consists of 2 core employees.
+						<br/><br/>
+						Reward them with your affection by clicking the
+						<span class="mdi mdi-heart -hover-heart pointer"></span>.
+					<br/><br/>
+					</p>
+				</article>
+				<div class="-mob-profile">
+					<div class="-avatar">
+						<img class="-team-img" src="./images/serg.jpg" alt="">
+						<div class="-team-title">
+							Employee A<br/>	<br/>
+							<a class="black -hover-thm mh2" href=""><span class="mdi mdi-24px mdi-twitter"></span></a>
+							<a class="black -hover-thm mh2" href=""><span class="mdi mdi-24px mdi-instagram"></span></a>
+							<a class="black -hover-thm mh2" href=""><span class="mdi mdi-24px mdi-github-face"></span></a>
+							<span data-id="Serg" class="pointer black -hover-heart -heart mh2"><span class="mdi mdi-24px mdi-heart"></span></span>
+						</div>
+					</div>
+					<div class="-bio">
+						<p>
+							Employee A, commonly known as "Lesego Motea".
+							Works in Marketing, Web Design, Web Development.
+						</p>
+					</div>
+				</div><br/><br/>
+				<div class="-mob-profile">
+					<div class="-avatar">
+						<img class="-team-img" style="filter: grayscale(54%);" src="./images/roy.jpg" alt="">
+						<div class="-team-title">
+							Employee B<br/><br/>
+							<a class="black -hover-thm mh2" href=""><span class="mdi mdi-24px mdi-twitter"></span></a>
+							<a class="black -hover-thm mh2" href=""><span class="mdi mdi-24px mdi-instagram"></span></a>
+							<a class="black -hover-thm mh2" href=""><span class="mdi mdi-24px mdi-github-face"></span></a>
+							<span data-id="Roy" class="pointer black -hover-heart -heart mh2"><span class="mdi mdi-24px mdi-heart"></span></span>
+						</div>
+					</div>
+					<div class="-bio">
+						<p>
+							Employee B, commonly known as "Roy Motloutsi".
+							Works in Software, Web Design, Web Development.
+						</p>
+					</div>
+				</div>
+		</div>
 		<!-- Mobile menu -->
-		<div class="fixed pt4 absolute--fill -mob-menu tc bg-white dn">
+		<div class="fixed pt2 absolute--fill -mob-menu tc bg-white dn">
 			<div class="-menu-opts pt3">
 				<div id="mob-nav-home" data-id="0" class="f2 -hover-thm -mob-nav -active">Home</div>
 				<div id="mob-nav-about" data-id="1" class="f2 -hover-thm -mob-nav">About</div>
@@ -268,7 +317,7 @@
 	</div>
 <script src="./site.js"></script>
 <script>
-	f('#mob-nav-about').click()
+	f('#mob-nav-team').click()
 </script>
 </body>
 </html>
