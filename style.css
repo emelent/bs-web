@@ -366,8 +366,11 @@ html{
 	text-align: center;
 }
 
-.-mob-nav{
+.-mob-nav, .-mob-nav-strike{
 	margin: 10px 0;
+}
+.-mob-nav-strike{
+	text-decoration: line-through;
 }
 
 .-mob-nav.-active{
