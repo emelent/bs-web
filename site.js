@@ -36,6 +36,9 @@ function navClick(){
 }
 
 attach('.-nav-btn', 'click', navClick)
-
+attach('.-heart', 'click', event => {
+	const el =  event.target.parentElement
+	el.classList.toggle('-active')
+})
 
 

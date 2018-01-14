@@ -1,4 +1,4 @@
-@font-face{
+/* @font-face{
 	font-family: 'OSL';
 	src: url('./fonts/OpenSans-Light.ttf');
 }
@@ -11,7 +11,7 @@
 @font-face{
 	font-family: 'OSB';
 	src: url('./fonts/OpenSans-Bold.ttf');
-}
+} */
 
 html{
 	font-family: sans-serif;
@@ -81,38 +81,9 @@ html{
 	width: 240px;
 }
 
-
-/*phones*/
-@media (max-width:767px) {
-	.-hide-xs{
-		display: none!important;
-	}
+.-show-xs{
+	display: none;
 }
-
-/*tablet*/
-@media (min-width:768px) and (max-width:991px) {
-	.-hide-sm{
-		display: none!important;
-	}
-
-}
-
-/*monitor*/
-@media (min-width:992px) and (max-width:1199px) {
-
-	.-hide-md{
-		display: none!important;
-	}
-}
-
-/*large monitor*/
-@media (min-width:1200px) {
-	.-hide-lg{
-		display: none!important;
-	}
-
-}
-
 
 .-ln{
 	text-decoration:none;
@@ -283,6 +254,38 @@ html{
 	color: darkred;
 }
 
+.-heart{
+	position:relative;
+}
+
+.-heart.-active{
+	color: darkred !important;
+}
+.-heart:after{
+    content: "\F2D1";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -2px;
+    left: -13px;
+	color: transparent;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: 1em;
+    text-rendering: auto;
+    line-height: inherit;
+	-webkit-font-smoothing: antialiased;
+	pointer-events: none;
+	transition: 
+		0.4s cubic-bezier(0.22, 0.61, 0.36, 1) transform,
+		0.4s cubic-bezier(0.22, 0.61, 0.36, 1) opacity;
+}
+.-heart.-active:after{
+	color: indianred;
+	transform: scale(2);
+	opacity: 0;
+}
+
+
 .-hover-thm:hover{
 	color:  var(--theme-color);
 }
@@ -299,4 +302,46 @@ html{
 }
 .-acc{
 	color: var(--accent-color);
+}
+
+.-mob-view{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;	
+}
+/*phones*/
+@media (max-width:767px) {
+	.-hide-xs{
+		display: none!important;
+	}
+	.-show-xs{
+		display: initial;
+	}
+}
+
+/*tablet*/
+@media (min-width:768px) and (max-width:991px) {
+	.-hide-sm{
+		display: none!important;
+	}
+
+}
+
+/*monitor*/
+@media (min-width:992px) and (max-width:1199px) {
+
+	.-hide-md{
+		display: none!important;
+	}
+}
+
+/*large monitor*/
+@media (min-width:1200px) {
+	.-hide-lg{
+		display: none!important;
+	}
+
 }
